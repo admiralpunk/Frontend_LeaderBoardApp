@@ -4,9 +4,12 @@ import axios from "axios";
 const UserSelect = ({ users, selectedUser, setSelectedUser, refreshUsers }) => {
   const claimPoints = async () => {
     if (selectedUser) {
-      await axios.post("http://localhost:5000/claim/claim", {
-        userId: selectedUser,
-      });
+      await axios.post(
+        "https://backend-leader-board-app.vercel.app//claim/claim",
+        {
+          userId: selectedUser,
+        }
+      );
       refreshUsers(); // Fetch the latest user data after claiming points
     }
   };

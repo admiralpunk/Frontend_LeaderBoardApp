@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:5000"); // Adjust as per your backend URL
+const socket = io.connect("https://backend-leader-board-app.vercel.app"); // Adjust as per your backend URL
 
 function ClaimPoints() {
   const [users, setUsers] = useState([]);
@@ -10,7 +10,9 @@ function ClaimPoints() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await axios.get("http://localhost:5000/users/users");
+      const res = await axios.get(
+        "https://backend-leader-board-app.vercel.app//users/users"
+      );
       setUsers(res.data);
     };
     fetchUsers();
@@ -18,9 +20,12 @@ function ClaimPoints() {
 
   const handleClaim = async () => {
     if (!selectedUser) return;
-    const res = await axios.post("http://localhost:5000/claim/claim", {
-      userId: selectedUser,
-    });
+    const res = await axios.post(
+      "https://backend-leader-board-app.vercel.app//claim/claim",
+      {
+        userId: selectedUser,
+      }
+    );
     socket.emit("claim-points", res.data.user); // Emit event for real-time update
   };
 

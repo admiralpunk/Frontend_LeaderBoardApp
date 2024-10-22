@@ -6,9 +6,12 @@ const AddUser = ({ refreshUsers }) => {
 
   const addNewUser = async () => {
     if (newUserName) {
-      await axios.post("http://localhost:5000/users/add", {
-        name: newUserName,
-      });
+      await axios.post(
+        "https://backend-leader-board-app.vercel.app//users/add",
+        {
+          name: newUserName,
+        }
+      );
       setNewUserName("");
       refreshUsers(); 
       // Refresh the user list after adding a new user

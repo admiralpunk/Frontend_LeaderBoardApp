@@ -6,7 +6,7 @@ import UserSelect from "./components/UserSelect";
 import Leaderboard from "./components/Leaderboard";
 import AddUser from "./components/AddUser";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://backend-leader-board-app.vercel.app");
 
 
 const App = () => {
@@ -15,7 +15,9 @@ const App = () => {
 
   // Fetch users from the backend
   const fetchUsers = async () => {
-    const { data } = await axios.get("http://localhost:5000/users/users");
+    const { data } = await axios.get(
+      "https://backend-leader-board-app.vercel.app/users/users"
+    );
     setUsers(data);
   };
 
