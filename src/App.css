@@ -1,0 +1,99 @@
+/* Apply background color to the entire screen */
+body {
+  background-color: #F9C0C5; /* Roseanna color */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  font-family: 'Montserrat', sans-serif; /* Set the default font for the body */
+}
+
+/* Main application container styling */
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for main heading */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: #ff5722; /* Vibrant orange color */
+  margin-bottom: 20px;
+}
+
+/* Section margin styling */
+.claim-points-section, .add-user-section {
+  margin-bottom: 30px;
+}
+
+/* User input styling */
+.user-select, .user-input {
+  padding: 12px;
+  font-size: 16px;
+  width: 220px;
+  margin-right: 10px;
+  border: 2px solid #3f51b5; /* Indigo border */
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+/* Button styling */
+.claim-button, .add-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Leaderboard section styling */
+.leaderboard-section {
+  margin-top: 50px;
+}
+
+/* Leaderboard list styling */
+.leaderboard {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid #3f51b5; /* Indigo border */
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual leaderboard item styling */
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee; /* Light border */
+  transition: background-color 0.3s;
+}
+
+/* Rank styling */
+.rank {
+  font-weight: bold;
+  color: #b36b43; /* Vibrant orange for rank */
+}
+
+/* Username styling */
+.username {
+  font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+  font-size: 20px; /* Increased font size */
+  font-weight: 600; /* Bold weight */
+  color: #7E909A; /* Vibrant purple color for username */
+}
+
+/* Points styling */
+.totalPoints {
+  font-weight: bold;
+  color: #0091D5; /* Orange color for points */
+}

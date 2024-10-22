@@ -1,0 +1,111 @@
+/* Main application container styling */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for main heading */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Section margin styling */
+.claim-points-section, .add-user-section {
+  margin-bottom: 30px;
+}
+
+/* User input styling */
+.user-select, .user-input {
+  padding: 12px;
+  font-size: 16px;
+  width: 220px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs */
+.user-select:focus, .user-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.claim-button, .add-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effects for buttons */
+.claim-button:hover, .add-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Leaderboard section styling */
+.leaderboard-section {
+  margin-top: 50px;
+}
+
+/* Leaderboard list styling */
+.leaderboard {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual leaderboard item styling */
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+/* Last leaderboard item without border */
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+/* Rank styling */
+.rank {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Username styling */
+.username {
+  font-size: 18px;
+}
+
+/* Points styling */
+.points {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Hover effect for leaderboard items */
+.leaderboard-item:hover {
+  background-color: #f0f8ff;
+}
