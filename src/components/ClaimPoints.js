@@ -11,7 +11,7 @@ function ClaimPoints() {
   useEffect(() => {
     const fetchUsers = async () => {
       const res = await axios.get(
-        "https://backend-leader-board-app.vercel.app//users/users"
+        "https://backend-leader-board-app.vercel.app/users/users"
       );
       setUsers(res.data);
     };
@@ -21,7 +21,7 @@ function ClaimPoints() {
   const handleClaim = async () => {
     if (!selectedUser) return;
     const res = await axios.post(
-      "https://backend-leader-board-app.vercel.app//claim/claim",
+      "https://backend-leader-board-app.vercel.app/claim/claim",
       {
         userId: selectedUser,
       }

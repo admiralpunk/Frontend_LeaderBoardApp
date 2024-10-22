@@ -5,7 +5,7 @@ const UserSelect = ({ users, selectedUser, setSelectedUser, refreshUsers }) => {
   const claimPoints = async () => {
     if (selectedUser) {
       await axios.post(
-        "https://backend-leader-board-app.vercel.app//claim/claim",
+        "https://backend-leader-board-app.vercel.app/claim/claim",
         {
           userId: selectedUser,
         }

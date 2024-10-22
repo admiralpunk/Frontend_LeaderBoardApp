@@ -7,7 +7,7 @@ const AddUser = ({ refreshUsers }) => {
   const addNewUser = async () => {
     if (newUserName) {
       await axios.post(
-        "https://backend-leader-board-app.vercel.app//users/add",
+        "https://backend-leader-board-app.vercel.app/users/add",
         {
           name: newUserName,
         }
