@@ -4,7 +4,7 @@ import axios from "axios";
 const UserSelect = ({ users, selectedUser, setSelectedUser, refreshUsers }) => {
   const claimPoints = async () => {
     if (selectedUser) {
-      const { data } = await axios.post("http://localhost:5000/claim/claim", {
+      await axios.post("http://localhost:5000/claim/claim", {
         userId: selectedUser,
       });
       refreshUsers(); // Fetch the latest user data after claiming points
